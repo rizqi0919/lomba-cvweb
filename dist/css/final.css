@@ -1414,3 +1414,21 @@ body {
     width: 33.333333%;
   }
 }
+
+/* Garis pnghubung li */
+
+.list-with-lines li {
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.list-with-lines li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #14b8a6; /* Ubah warna sesuai kebutuhan */
+}
